@@ -119,7 +119,7 @@ int atalk_serial_tx(struct aTalk *atalk) {
     if (msglen < 0) return ATALK_SERIAL_WRITE_ERROR;
 
     /* append line terminator: needed by canonical mode. */
-    if (write(serial->fd,"\n",1) < 0) return -2;
+    if (write(serial->fd,"\n",1) < 0) return ATALK_SERIAL_WRITE_NL_ERROR;
 
     return msglen;
 }
