@@ -61,7 +61,7 @@ board. Open the example selecting from the Arduino IDE menu File > Examples,
 then scroll the Examples list untill the item *aTalkArduino*, click it and
 select from the just opened list the item *atalk_echo*.
 Connect the Linux system to the Arduino board with an USB cable, typically
-this connection is seen fron the Linux system as an */dev/ttyUSBn* device.
+this connection is seen from the Linux system as an */dev/ttyUSBn* device.
 Where n is generally 0 if no other USB hardware is connected.
 In the Arduino IDE, select the proper Arduino board (menu: Tools > Boards),
 i.e. *Arduino nano*, and the proper connection port (menu: Tools > Port),

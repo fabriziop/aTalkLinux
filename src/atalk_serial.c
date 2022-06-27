@@ -55,7 +55,7 @@ int atalk_serial_init(struct aTalk *atalk,char *device,
   else
     serial->receive_timeout = NULL;
 
-  /* get termios strcture */
+  /* get termios structure */
   if (tcgetattr(serial->fd, &tty) < 0) {
       printf("Error from tcgetattr: %s\n", strerror(errno));
       return -1;
