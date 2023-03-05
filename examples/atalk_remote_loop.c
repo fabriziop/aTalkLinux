@@ -63,7 +63,7 @@ int main()
       strcpy(link_device,LINK_DEVICE);
 
     /* init serial link */
-    if (atalk_serial_init(atalk,LINK_DEVICE,LINK_SPEED,RECEIVE_TIMEOUT)) {
+    if (atalk_serial_init(atalk,link_device,LINK_SPEED,RECEIVE_TIMEOUT)) {
       printf("ERROR: atalk_serial_init failed.\n");
       exit(2);
     };
